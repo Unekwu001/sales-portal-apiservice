@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(IpNxDbContext))]
-    [Migration("20240623100340_DataAllowance")]
-    partial class DataAllowance
+    [Migration("20240717093237_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,23 +27,42 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.AgentModel.Agent", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<string>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("text");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)");
+
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedOnUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("LastUpdatedById")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("LastUpdatedOnUtc")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("character varying(500)");
 
-                    b.Property<string>("State")
+                    b.Property<string>("Region")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
+
+                    b.Property<string>("Type")
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.HasKey("Id");
 
@@ -84,7 +103,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c75cdc5c-095d-4920-a028-dcb0e365ed10"),
+                            Id = new Guid("669e01b9-0809-4642-bb6f-b95d6d4debd8"),
                             CoverageName = "Parkview Coverage Gap",
                             Latitude = 6.4499999999999993,
                             Lga = "Ikoyi",
@@ -93,7 +112,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ee8d622a-6812-4b40-93a6-790e2662c951"),
+                            Id = new Guid("2e9fb6f7-4242-48be-96e6-ae7088aadf3b"),
                             CoverageName = "victoria garden city",
                             Latitude = 6.464587400000001,
                             Lga = "Ajah",
@@ -102,7 +121,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("e637fbed-5563-4714-8113-d7e8042e374e"),
+                            Id = new Guid("955b3226-831a-4bc4-a26a-ef3a6505cbba"),
                             CoverageName = "Oral Estate",
                             Latitude = 6.4466677000000008,
                             Lga = "Lekki",
@@ -111,7 +130,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("95bd5d6b-ee9e-4ee3-bdab-d0e3c7196c56"),
+                            Id = new Guid("1d4373d4-0af9-4a17-b83b-0d7a904d714a"),
                             CoverageName = "Northern Foreshore",
                             Latitude = 6.4582094999999997,
                             Lga = "lekki",
@@ -120,7 +139,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9341e3d9-ca5e-4bf4-9685-a6e5b87f9f96"),
+                            Id = new Guid("5063a3d8-d98a-4f5d-9e32-0fdf8db5e5ee"),
                             CoverageName = "Ikota GRA",
                             Latitude = 6.4460404999999996,
                             Lga = "lekki",
@@ -129,7 +148,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("29ff0d49-9cd9-482e-b536-ce81d8b205db"),
+                            Id = new Guid("74c635d6-70df-45b7-8c37-4a026a739013"),
                             CoverageName = "Lekki Phase 1",
                             Latitude = 6.4478092999999994,
                             Lga = "lekki",
@@ -138,7 +157,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9d2cf10a-c989-46f9-83b2-e9af81139c99"),
+                            Id = new Guid("aac866fa-72c7-4664-80b7-4c17720fb670"),
                             CoverageName = "Ammsco Platinum",
                             Latitude = 8.9982132000000004,
                             Lga = "Galadimawa",
@@ -147,7 +166,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9196d65a-4e97-4c8f-b961-c876e219da4d"),
+                            Id = new Guid("42598047-6b14-4609-a525-c59821919703"),
                             CoverageName = "Fafu Estate",
                             Latitude = 8.9786175000000004,
                             Lga = "Lokogoma",
@@ -156,7 +175,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b5ea56c0-b267-48a6-9c37-93033d0981e9"),
+                            Id = new Guid("839e7099-fb32-4bb2-8197-7d1aff3fa4a3"),
                             CoverageName = "Wonderland Estate",
                             Latitude = 9.017571199999999,
                             Lga = "Kukwaba",
@@ -165,7 +184,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("647d2dd8-7bd2-4c2d-a43d-53327b729a9c"),
+                            Id = new Guid("92ce1467-643a-48ca-8fad-954fa7cadd4d"),
                             CoverageName = "Aminas Court",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -174,7 +193,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("af90887c-6467-43c7-8f05-5a9d7eb4cc90"),
+                            Id = new Guid("4ffed639-8fa5-4549-8c46-19e8cb5e16ea"),
                             CoverageName = "Sticks and Stones",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -183,7 +202,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("15febe28-22c1-48b8-b611-da28b468ff76"),
+                            Id = new Guid("f4749b08-dfd1-49b1-9758-f80734eb9470"),
                             CoverageName = "Pleasant Places",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -192,7 +211,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d4ba22a4-e33a-4a2a-a400-300b77f8b022"),
+                            Id = new Guid("47ad7c92-5a29-488f-a489-9fc33ee5e1e8"),
                             CoverageName = "Standard Estate",
                             Latitude = 8.9737823999999993,
                             Lga = "Galadimawa",
@@ -201,7 +220,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8e82a001-cf19-4dc0-ad75-8c709e71768d"),
+                            Id = new Guid("75b079cb-b4aa-4c50-b1ca-642190bde2b8"),
                             CoverageName = "Trademoore",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -210,7 +229,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("cc32e406-29de-4ea4-a1ba-fea9569fa50c"),
+                            Id = new Guid("acfedd2d-c824-407d-ae86-737e6060f14c"),
                             CoverageName = "Jubilation Comfort(Yoruba Estate)",
                             Latitude = 8.9610229999999991,
                             Lga = "Lokogoma",
@@ -237,7 +256,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ccf8e7b0-514f-4e01-91cd-ee3172a94161"),
+                            Id = new Guid("0abc3c9d-2315-4b50-857b-64465b47ba1f"),
                             Key = "AIzaSyDdN2yR9ooX0Glo7oMHFmBZGVYniVl71Bk"
                         });
                 });
@@ -318,6 +337,9 @@ namespace Data.Migrations
                     b.Property<DateTime>("CreatedOnUtc")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
 
@@ -330,8 +352,8 @@ namespace Data.Migrations
                     b.Property<decimal>("Percentage")
                         .HasColumnType("numeric");
 
-                    b.Property<Guid>("PlanTypeId")
-                        .HasColumnType("uuid");
+                    b.Property<DateTime?>("StartDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("State")
                         .IsRequired()
@@ -379,7 +401,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("150a3862-1e75-4569-a3a2-a42f55129172"),
+                            Id = new Guid("20b1f34c-cd48-47ee-a3b9-9a31a0175c5c"),
                             SmtpHost = "smtp-mail.outlook.com",
                             SmtpPassword = "Otusegwa360@",
                             SmtpPort = 587,
@@ -421,6 +443,9 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("text");
 
+                    b.Property<string>("AgentId")
+                        .HasColumnType("text");
+
                     b.Property<string>("AlternativePhoneNumber")
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)");
@@ -437,6 +462,9 @@ namespace Data.Migrations
 
                     b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("date");
+
+                    b.Property<decimal?>("Discount")
+                        .HasColumnType("numeric");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -461,6 +489,12 @@ namespace Data.Migrations
 
                     b.Property<string>("GovernmentId")
                         .HasColumnType("text");
+
+                    b.Property<bool>("HasRequestedInstallation")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("HasRequestedToAddWifi")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("HouseNumber")
                         .HasMaxLength(200)
@@ -534,6 +568,8 @@ namespace Data.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AgentId");
 
                     b.HasIndex("PlanTypeId");
 
@@ -610,6 +646,9 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("text");
 
+                    b.Property<string>("AgentId")
+                        .HasColumnType("text");
+
                     b.Property<string>("CertificateOfIncorporation")
                         .HasMaxLength(500)
                         .HasColumnType("character varying(500)");
@@ -656,9 +695,18 @@ namespace Data.Migrations
                     b.Property<DateTime>("CreatedOnUtc")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<decimal?>("Discount")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("GovernmentId")
                         .HasMaxLength(500)
                         .HasColumnType("character varying(500)");
+
+                    b.Property<bool>("HasRequestedInstallation")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("HasRequestedToAddWifi")
+                        .HasColumnType("boolean");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
@@ -716,6 +764,8 @@ namespace Data.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AgentId");
 
                     b.HasIndex("PlanTypeId");
 
@@ -881,8 +931,12 @@ namespace Data.Migrations
                     b.Property<DateTime>("CreatedOnUtc")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("DataAllowance")
-                        .HasColumnType("integer");
+                    b.Property<string>("DataAllowance")
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<Guid?>("DiscountId")
+                        .HasColumnType("uuid");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
@@ -924,6 +978,8 @@ namespace Data.Migrations
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiscountId");
 
                     b.HasIndex("PlanId");
 
@@ -1005,6 +1061,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.OrderModels.ResidentialOrder", b =>
                 {
+                    b.HasOne("Data.Models.AgentModel.Agent", "Agent")
+                        .WithMany("ResidentialOrders")
+                        .HasForeignKey("AgentId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.HasOne("Data.Models.PlanModels.PlanType", "PlanType")
                         .WithMany()
                         .HasForeignKey("PlanTypeId")
@@ -1015,6 +1076,8 @@ namespace Data.Migrations
                         .WithMany()
                         .HasForeignKey("ResidentialBillingDetailsId");
 
+                    b.Navigation("Agent");
+
                     b.Navigation("PlanType");
 
                     b.Navigation("ResidentialBillingDetails");
@@ -1022,6 +1085,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.OrderModels.SmeOrder", b =>
                 {
+                    b.HasOne("Data.Models.AgentModel.Agent", "Agent")
+                        .WithMany("SmeOrders")
+                        .HasForeignKey("AgentId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.HasOne("Data.Models.PlanModels.PlanType", "PlanType")
                         .WithMany()
                         .HasForeignKey("PlanTypeId")
@@ -1032,6 +1100,8 @@ namespace Data.Migrations
                         .WithMany()
                         .HasForeignKey("SmeBillingDetailsId");
 
+                    b.Navigation("Agent");
+
                     b.Navigation("PlanType");
 
                     b.Navigation("SmeBillingDetails");
@@ -1039,13 +1109,32 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.PlanModels.PlanType", b =>
                 {
+                    b.HasOne("Data.Models.DiscountModel.Discount", "Discount")
+                        .WithMany("PlanTypes")
+                        .HasForeignKey("DiscountId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.HasOne("Data.Models.PlanModels.Plan", "Plan")
                         .WithMany("PlanTypes")
                         .HasForeignKey("PlanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Discount");
+
                     b.Navigation("Plan");
+                });
+
+            modelBuilder.Entity("Data.Models.AgentModel.Agent", b =>
+                {
+                    b.Navigation("ResidentialOrders");
+
+                    b.Navigation("SmeOrders");
+                });
+
+            modelBuilder.Entity("Data.Models.DiscountModel.Discount", b =>
+                {
+                    b.Navigation("PlanTypes");
                 });
 
             modelBuilder.Entity("Data.Models.PlanModels.Plan", b =>

@@ -13,3 +13,19 @@ C:\Users\tshaibu\Music\apiservice\Core\obj\Debug\net8.0\Core.dll
 C:\Users\tshaibu\Music\apiservice\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Users\tshaibu\Music\apiservice\Core\obj\Debug\net8.0\Core.pdb
 C:\Users\tshaibu\Music\apiservice\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\bin\Debug\net8.0\Core.deps.json
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\bin\Debug\net8.0\Core.dll
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\bin\Debug\net8.0\Core.pdb
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\bin\Debug\net8.0\Data.dll
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\bin\Debug\net8.0\Data.pdb
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.sourcelink.json
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.csproj.CopyComplete
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.dll
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\Core.pdb
+C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Debug\net8.0\ref\Core.dll

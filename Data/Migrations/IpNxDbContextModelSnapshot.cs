@@ -100,7 +100,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("aa47d24a-1de4-401f-a217-dbb330430fc4"),
+                            Id = new Guid("669e01b9-0809-4642-bb6f-b95d6d4debd8"),
                             CoverageName = "Parkview Coverage Gap",
                             Latitude = 6.4499999999999993,
                             Lga = "Ikoyi",
@@ -109,7 +109,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6c0bba50-bdbe-4364-a6df-c178b4ed96b8"),
+                            Id = new Guid("2e9fb6f7-4242-48be-96e6-ae7088aadf3b"),
                             CoverageName = "victoria garden city",
                             Latitude = 6.464587400000001,
                             Lga = "Ajah",
@@ -118,7 +118,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d693ff36-4c9e-4883-9498-990cefe6f7d2"),
+                            Id = new Guid("955b3226-831a-4bc4-a26a-ef3a6505cbba"),
                             CoverageName = "Oral Estate",
                             Latitude = 6.4466677000000008,
                             Lga = "Lekki",
@@ -127,7 +127,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2f235404-b70a-4452-af5f-3fe28e9fce20"),
+                            Id = new Guid("1d4373d4-0af9-4a17-b83b-0d7a904d714a"),
                             CoverageName = "Northern Foreshore",
                             Latitude = 6.4582094999999997,
                             Lga = "lekki",
@@ -136,7 +136,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("fce242dd-7667-4615-bcb9-26acf649ca6b"),
+                            Id = new Guid("5063a3d8-d98a-4f5d-9e32-0fdf8db5e5ee"),
                             CoverageName = "Ikota GRA",
                             Latitude = 6.4460404999999996,
                             Lga = "lekki",
@@ -145,7 +145,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("5d2666a0-bf6f-498c-8d6f-c0ade89c29b6"),
+                            Id = new Guid("74c635d6-70df-45b7-8c37-4a026a739013"),
                             CoverageName = "Lekki Phase 1",
                             Latitude = 6.4478092999999994,
                             Lga = "lekki",
@@ -154,7 +154,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c5d7ca10-1bd5-414e-a7c5-0b5e3b96a9dd"),
+                            Id = new Guid("aac866fa-72c7-4664-80b7-4c17720fb670"),
                             CoverageName = "Ammsco Platinum",
                             Latitude = 8.9982132000000004,
                             Lga = "Galadimawa",
@@ -163,7 +163,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0f31f0e6-655b-4766-988e-ffe7ae37735d"),
+                            Id = new Guid("42598047-6b14-4609-a525-c59821919703"),
                             CoverageName = "Fafu Estate",
                             Latitude = 8.9786175000000004,
                             Lga = "Lokogoma",
@@ -172,7 +172,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("e526a9f3-b555-4c12-9614-58b8e573215a"),
+                            Id = new Guid("839e7099-fb32-4bb2-8197-7d1aff3fa4a3"),
                             CoverageName = "Wonderland Estate",
                             Latitude = 9.017571199999999,
                             Lga = "Kukwaba",
@@ -181,7 +181,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("dbefff8e-8bd6-46f5-9449-286e45183d11"),
+                            Id = new Guid("92ce1467-643a-48ca-8fad-954fa7cadd4d"),
                             CoverageName = "Aminas Court",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -190,7 +190,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("763584c8-692a-4607-adb2-cd0d4ff76823"),
+                            Id = new Guid("4ffed639-8fa5-4549-8c46-19e8cb5e16ea"),
                             CoverageName = "Sticks and Stones",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -199,7 +199,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c598087d-b33f-43cd-9799-005eee875895"),
+                            Id = new Guid("f4749b08-dfd1-49b1-9758-f80734eb9470"),
                             CoverageName = "Pleasant Places",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -208,7 +208,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("555d04c0-0831-4204-8a8b-0a5cf76a875c"),
+                            Id = new Guid("47ad7c92-5a29-488f-a489-9fc33ee5e1e8"),
                             CoverageName = "Standard Estate",
                             Latitude = 8.9737823999999993,
                             Lga = "Galadimawa",
@@ -217,7 +217,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("200826d8-e56d-4f43-99ae-b047e21330d2"),
+                            Id = new Guid("75b079cb-b4aa-4c50-b1ca-642190bde2b8"),
                             CoverageName = "Trademoore",
                             Latitude = 8.9775469999999995,
                             Lga = "Apo-Dutse",
@@ -226,7 +226,7 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("cdbc8ad8-ee9e-41c5-9c70-faf0c0d0038f"),
+                            Id = new Guid("acfedd2d-c824-407d-ae86-737e6060f14c"),
                             CoverageName = "Jubilation Comfort(Yoruba Estate)",
                             Latitude = 8.9610229999999991,
                             Lga = "Lokogoma",
@@ -253,7 +253,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("20c09ac4-af7e-450c-9c92-8253dd7bb33e"),
+                            Id = new Guid("0abc3c9d-2315-4b50-857b-64465b47ba1f"),
                             Key = "AIzaSyDdN2yR9ooX0Glo7oMHFmBZGVYniVl71Bk"
                         });
                 });
@@ -398,7 +398,7 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("81424dc9-1b7d-4e99-ae1a-a8f3352be8a5"),
+                            Id = new Guid("20b1f34c-cd48-47ee-a3b9-9a31a0175c5c"),
                             SmtpHost = "smtp-mail.outlook.com",
                             SmtpPassword = "Otusegwa360@",
                             SmtpPort = 587,

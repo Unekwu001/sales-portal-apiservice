@@ -2684,3 +2684,19 @@ System.MissingMethodException: Attempted to invoke a deleted method implementati
 2024-07-15 11:58:40.036 +01:00 [ERR] HTTP GET /api/v1/Discount/view-all-discounts responded 500 in 37279.5260 ms
 2024-07-15 12:00:18.135 +01:00 [INF] HTTP GET /api/v1/Discount/view-all-discounts responded 200 in 7401.0863 ms
 2024-07-15 12:10:01.232 +01:00 [INF] HTTP GET /api/v1/Discount/view-all-discounts responded 200 in 12168.1068 ms
+2024-07-17 10:31:12.859 +01:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "KeyFeatures";
+2024-07-17 10:33:19.317 +01:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Agents" (
+    "Id" text NOT NULL,
+    "Name" character varying(500) NOT NULL,
+    "Region" character varying(128) NOT NULL,
+    "Type" character varying(128),
+    "Address" character varying(255),
+    "CreatedById" uuid NOT NULL,
+    "LastUpdatedById" uuid NOT NULL,
+    "CreatedOnUtc" timestamp with time zone NOT NULL,
+    "LastUpdatedOnUtc" timestamp with time zone NOT NULL,
+    "IsActive" boolean NOT NULL,
+    CONSTRAINT "PK_Agents" PRIMARY KEY ("Id")
+);
