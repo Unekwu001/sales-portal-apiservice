@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2024-04-23T06:50:51.4431043Z"
+    },
+    "secrets.user": {
+      "restored": true,
+      "restoreTime": "2024-04-23T06:48:42.3958529Z"
+    }
+  },
+  "parameters": {}
+}
