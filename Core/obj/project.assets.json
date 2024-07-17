@@ -2492,11 +2492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\theophilusu\\OneDrive - ExamRoomAI\\Documents\\apiservice\\apiservice\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\theophilusu\\.jenkins\\workspace\\TestPipeline\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\theophilusu\\OneDrive - ExamRoomAI\\Documents\\apiservice\\apiservice\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\theophilusu\\.jenkins\\workspace\\TestPipeline\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\theophilusu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\theophilusu\\OneDrive - ExamRoomAI\\Documents\\apiservice\\apiservice\\Core\\obj\\",
+      "outputPath": "C:\\Users\\theophilusu\\.jenkins\\workspace\\TestPipeline\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2519,8 +2519,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\theophilusu\\OneDrive - ExamRoomAI\\Documents\\apiservice\\apiservice\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\theophilusu\\OneDrive - ExamRoomAI\\Documents\\apiservice\\apiservice\\Data\\Data.csproj"
+            "C:\\Users\\theophilusu\\.jenkins\\workspace\\TestPipeline\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\theophilusu\\.jenkins\\workspace\\TestPipeline\\Data\\Data.csproj"
             }
           }
         }
