@@ -2700,3 +2700,4 @@ CREATE TABLE "Agents" (
     "IsActive" boolean NOT NULL,
     CONSTRAINT "PK_Agents" PRIMARY KEY ("Id")
 );
+2024-07-17 10:51:32.228 +01:00 [INF] HTTP POST /api/v1/User/sign-up responded 200 in 637.0176 ms
