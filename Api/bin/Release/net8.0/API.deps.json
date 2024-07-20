@@ -21,6 +21,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.4",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.6",
+          "Microsoft.Web.Deployment": "4.0.5",
           "Newtonsoft.Json": "13.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "Serilog.AspNetCore": "8.0.1",
@@ -810,6 +811,22 @@
         }
       },
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.6": {},
+      "Microsoft.Web.Deployment/4.0.5": {
+        "runtime": {
+          "lib/net45/Microsoft.Web.Delegation.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.3903.5"
+          },
+          "lib/net45/Microsoft.Web.Deployment.Tracing.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "7.1.3903.3"
+          },
+          "lib/net45/Microsoft.Web.Deployment.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "7.1.3903.7"
+          }
+        }
+      },
       "Mono.TextTemplating/2.2.1": {
         "dependencies": {
           "System.CodeDom": "4.4.0"
@@ -1671,6 +1688,13 @@
       "sha512": "sha512-7GOQdMzQcH7o/bPFL/I2kQEgMnq2pYZ+exhGb9nNqs624K9w2jB2zieh4sOH9+a01i/G9iTWfeUI3IGMF7SKNg==",
       "path": "microsoft.visualstudio.azure.containers.tools.targets/1.19.6",
       "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512"
+    },
+    "Microsoft.Web.Deployment/4.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2oaT2ksEHS6C73zt1WJXDBRpK6RMmXgKIGHCiexSvlt2NAy3i8lqEV2pb6HpuvxCFHrkBNonN7xrysO79pIOtg==",
+      "path": "microsoft.web.deployment/4.0.5",
+      "hashPath": "microsoft.web.deployment.4.0.5.nupkg.sha512"
     },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",

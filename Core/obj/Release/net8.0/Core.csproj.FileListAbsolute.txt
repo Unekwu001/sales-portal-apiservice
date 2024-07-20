@@ -14,3 +14,19 @@ C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\
 C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Release\net8.0\refint\Core.dll
 C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Release\net8.0\Core.pdb
 C:\Users\theophilusu\OneDrive - ExamRoomAI\Documents\apiservice\apiservice\Core\obj\Release\net8.0\ref\Core.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\bin\Release\net8.0\Core.deps.json
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\bin\Release\net8.0\Core.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\bin\Release\net8.0\Core.pdb
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\bin\Release\net8.0\Data.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\bin\Release\net8.0\Data.pdb
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.csproj.AssemblyReference.cache
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.AssemblyInfo.cs
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.sourcelink.json
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\refint\Core.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.pdb
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\ref\Core.dll
+C:\Users\theophilusu\.jenkins\workspace\TestPipeline\Core\obj\Release\net8.0\Core.csproj.CopyComplete
